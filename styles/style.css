@@ -1,0 +1,63 @@
+.container{
+	max-width: 1100px;
+	width: 90%;
+	margin: 0 auto;
+}
+.box{
+	width: 200px;
+	height: 200px;
+	background: mediumpurple;
+	border-radius: 0%;
+}
+.box:hover{
+	border-radius: 50%;
+}
+
+body{
+	background-image: url("../images/background.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/*sun*/
+.sun {
+  width: 200px;
+  height: 200px;
+  animation: myMove 15s infinite;
+  position: relative;
+}
+
+@keyframes myMove {
+  0% {
+    transform: translateY(400px);
+  }
+  33% {
+    transform: translateY(0px);
+  }
+  99% {
+    transform: translateY(400px);
+  }
+}
+
+/*duck*/
+.duck {
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  transform: scaleX(-1); 
+  animation: swim-right 4s linear infinite;
+}
+
+@keyframes swim-right {
+  0% {
+    transform: translateX(0) scaleX(-1); 
+  }
+  100% {
+    transform: translateX(800px) scaleX(-1);
+  }
+}
+
+
+
+
